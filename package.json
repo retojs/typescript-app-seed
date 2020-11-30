@@ -2,8 +2,13 @@
   "name": "typescript-app-seed",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "compile": "node_modules/.bin/tsc",
     "build": "webpack",
     "start": "webpack-dev-server --history-api-fallback --inline --progress --open",
     "start:backend": "node ./backend/server.js",
